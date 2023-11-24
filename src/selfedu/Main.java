@@ -7,13 +7,11 @@ public class Main{
         Point<Integer> pt = new Point<>(12, 22);
         Point<Double> ptD = new Point<>(12.5, 22.6);
 
-
         System.out.println(pt.x + " " + pt.y);
         System.out.println(ptD.x + " " + ptD.y);
 
         for(Object coord: ptD.getCoords())
             System.out.println((double)coord);
-
     }
 }
 
@@ -28,8 +26,6 @@ class Point<T> {
     Object[] getCoords() {
         return new Object[] {x, y};
     }
-
-
 }
 
 
